@@ -1,0 +1,12 @@
+===== JMeter-Equivalent Summary / Aggregate Report =====
+Total Samples (Requests): 200
+Successful Requests: 200
+Failed Requests (Errors): 0
+Error %: 0.0%
+Test Duration: 4.55 s
+Average Latency: 2.07 ms
+Minimum Response Time: 1.58 ms
+Maximum Response Time: 8.02 ms
+Median Response Time: 1.96 ms
+90th Percentile: 2.42 ms
+Throughput: 43.94 requests/second
