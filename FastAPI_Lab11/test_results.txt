@@ -1,0 +1,21 @@
+Login (correct credentials):
+POST /login  username=admin  password=admin123
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...","token_type":"bearer"}
+HTTP Status: 200
+
+Login (wrong credentials):
+POST /login  username=admin  password=wrongpass
+{"detail":"Invalid username or password"}
+HTTP Status: 401
+
+Protected endpoint WITH token:
+GET /secure-data  Authorization: Bearer <token>
+{"message":"Access granted to protected route"}
+HTTP Status: 200
+
+Protected endpoint WITHOUT token:
+GET /secure-data
+{"detail":"Not authenticated"}
+HTTP Status: 401
+
+Swagger UI: http://127.0.0.1:8001/docs -> 200 OK
